@@ -10,6 +10,10 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/health', async(req, res) => {
+    res.status(200).json({ message: 'Healthy Route' });
+})
+
 app.post('/renders', async (req, res) => {
   const { rawvideoURL, creatorAvatarURL, creatorName, bio } = req.body
   const bioWords = bio.split(" ");
