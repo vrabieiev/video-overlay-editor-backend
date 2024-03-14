@@ -32,7 +32,7 @@ app.post('/renders', async (req, res) => {
     
   });
 
-  const client = new Creatomate.Client('412fef71eb54e779a851f18b78ea4cdde6718cb0092cbf23cc7aff8ff697cece8c552321f10c764a94e22317e990964');
+  const client = new Creatomate.Client('2412fef71eb54e779a851f18b78ea4cdde6718cb0092cbf23cc7aff8ff697cece8c552321f10c764a94e22317e990964');
 
   const source = new Creatomate.Source({
     "output_format": "mp4",
